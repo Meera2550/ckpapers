@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CK PAPERS | Wholesale Paper Marketing - NTR District</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+  --charcoal: #08080A;
+  --charcoal-2: #0F0F14;
+  --charcoal-3: #16161D;
+  --gold: #B8860B;
+  --gold-bright: #D4AF37;
+  --gold-light: #E8D4A0;
+  --platinum: #F0F0F0;
+  --text: #FAFAFA;
+  --text-muted: #9CA3AF;
+  --border: rgba(184,134,11,0.18);
+}
+
+* {margin:0; padding:0; box-sizing:border-box;}
+html {scroll-behavior: smooth;}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background: var(--charcoal);
+  color: var(--text);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 70% 60% at 25% 30%, rgba(184,134,11,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 75% 70%, rgba(212,175,55,0.05) 0%, transparent 50%),
+    linear-gradient(180deg, var(--charcoal) 0%, var(--charcoal-2) 50%, var(--charcoal) 100%);
+  z-index: -3;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(184,134,11,0.15) 0%, transparent 2%),
+    radial-gradient(circle at 60% 70%, rgba(212,175,55,0.1) 0%, transparent 2%),
+    radial-gradient(circle at 80% 20%, rgba(184,134,11,0.12) 0%, transparent 2%);
+  background-size: 300px 300px, 400px 400px, 350px 350px;
+  animation: dustFloat 30s linear infinite;
+  z-index: -2;
+  opacity: 0.4;
+}
+@keyframes dustFloat {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+.texture-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="paper"><feTurbulence baseFrequency="0.04" numOctaves="5"/></filter><rect width="200" height="200" filter="url(%23paper)" opacity="0.03"/></svg>');
+  z-index: -1;
+  pointer-events: none;
+}
+
+.left-brand {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(-100%);
+  background: linear-gradient(135deg, rgba(15,15,20,0.98) 0%, rgba(22,22,29,0.98) 100%);
+  backdrop-filter: blur(25px);
+  border-right: 3px solid var(--gold);
+  padding: 35px 18px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  z-index: 1000;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 8px 0 40px rgba(0,0,0,0.6);
+}
+
+.left-brand.visible {
+  transform: translateY(-50%) translateX(0);
+}
+
+.left-brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  letter-spacing: 10px;
+  color: var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media(max-width: 768px) {
+  .left-brand { display: none; }
+}
+
+header {
+  padding: 110px 20px 70px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo-wrap {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.logo-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -25px;
+  background: conic-gradient(from 0deg, var(--gold), transparent, var(--gold-bright), transparent, var(--gold));
+  border-radius: 50%;
+  animation: rotate 12s linear infinite;
+  filter: blur(35px);
+  opacity: 0.9;
+}
+@keyframes rotate { to { transform: rotate(360deg); } }
+
+.logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--gold);
+  position: relative;
+  box-shadow: 
+    0 0 120px rgba(184,134,11,0.8),
+    inset 0 0 50px rgba(0,0,0,0.8);
+  animation: floatLux 8s ease-in-out infinite;
+}
+@keyframes floatLux {
+  0%,100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-28px) scale(1.05); }
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(48px, 8vw, 82px);
+  letter-spacing: 16px;
+  color: var(--gold);
+  margin-bottom: 14px;
+  text-shadow: 0 4px 30px rgba(184,134,11,0.5);
+}
+
+header p {
+  font-size: 13px;
+  color: var(--gold-light);
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.gold-line {
+  width: 140px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 35px auto;
+  box-shadow: 0 0 25px rgba(184,134,11,0.6);
+}
+
+.contact-header {
+  margin-top: 25px;
+  font-size: 16px;
+  color: var(--platinum);
+  font-weight: 500;
+}
+
+.contact-header a {
+  color: var(--gold-bright);
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.contact-header a:hover {
+  color: var(--gold-light);
+}
+
+.contact-header a:active {
+  color: #fff;
+  text-shadow: 0 0 15px var(--gold-bright);
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px 50px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 50px);
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: var(--platinum);
+}
+
+.hero p {
+  color: var(--text-muted);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.section {
+  padding: 100px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+}
+
+.section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 46px);
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: var(--platinum);
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 65px;
+  font-weight: 300;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.card {
+  background: linear-gradient(135deg, rgba(22,22,29,0.8) 0%, rgba(17,17,22,0.6) 100%);
+  padding: 50px 40px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(30px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-visual {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 
+    0 15px 40px rgba(0,0,0,0.6),
+    inset 0 -3px 15px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-visual::before {
+  content: 'A4';
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: rgba(184,134,11,0.12);
+  position: absolute;
+}
+
+.card-visual::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--gold);
+}
+
+.bundle-stack {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 70px;
+  height: 95px;
+  background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+  box-shadow: -8px 8px 20px rgba(0,0,0,0.4);
+  border: 1px solid rgba(184,134,11,0.4);
+}
+
+.bundle-stack::before,
+.bundle-stack::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border: inherit;
+}
+
+.bundle-stack::before {
+  top: -5px;
+  left: -5px;
+  z-index: -1;
+}
+
+.bundle-stack::after {
+  top: -10px;
+  left: -10px;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  border-color: var(--gold);
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
+
+.card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--platinum);
+  font-weight: 600;
+}
+
+.price-wrap {
+  margin: 20px 0;
+}
+
+.price-offer {
+  color: var(--gold-bright);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.price-range {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.specs {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 25px 0;
+  line-height: 2;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.order-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: transparent;
+  color: var(--gold);
+  text-decoration: none;
+  border: 2px solid var(--gold);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+  background: var(--gold);
+  color: var(--charcoal);
+  box-shadow: 0 10px 30px rgba(184,134,11,0.4);
+}
+
+.order-btn:active {
+  color: #fff;
+  text-shadow: 0 0 20px #fff, 0 0 30px var(--gold-bright);
+  transform: scale(0.98);
+}
+
+.terms-card {
+  background: linear-gradient(135deg, rgba(22,22,29,0.9) 0%, rgba(17,17,22,0.7) 100%);
+  padding: 40px;
+  border: 1px solid var(--border);
+  margin-top: 50px;
+  backdrop-filter: blur(20px);
+}
+
+.terms-card h4 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.terms-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.terms-list li {
+  color: var(--text-muted);
+  font-size: 14px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.terms-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+.carousel-section {
+  padding: 80px 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.carousel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 40px);
+  margin-bottom: 50px;
+  color: var(--platinum);
+  text-align: center;
+  font-weight: 600;
+}
+
+.carousel {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  gap: 60px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 200px;
+  height: 100px;
+  background: rgba(22,22,29,0.6);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.catalog-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(22,22,29,0.5) 0%, transparent 100%);
+}
+
+.catalog-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 50px;
+  background: var(--gold);
+  color: var(--charcoal);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid var(--gold);
+  transition: 0.4s;
+}
+
+.catalog-btn:hover {
+  background: var(--gold-bright);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(184,134,11,0.5);
+}
+
+.catalog-btn:active {
+  color: #fff;
+  text-shadow: 0 0 20px #fff, 0 0 30px var(--gold-bright);
+  transform: translateY(-2px) scale(0.98);
+}
+
+.cta-section {
+  padding: 80px 20px 100px;
+  text-align: center;
+  background: linear-gradient(180deg, transparent 0%, rgba(22,22,29,0.4) 100%);
+}
+
+.cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 40px);
+  margin-bottom: 50px;
+  color: var(--platinum);
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 20px 48px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 0; height: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.btn:active {
+  transform: translateY(-2px) scale(0.98);
+  text-shadow: 0 0 20px #fff, 0 0 30px var(--gold-bright);
+}
+
+.btn.whatsapp {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--charcoal);
+  box-shadow: 0 15px 45px rgba(184,134,11,0.4);
+}
+
+.btn.whatsapp:hover {
+  background: var(--gold-bright);
+  box-shadow: 0 20px 60px rgba(184,134,11,0.6);
+}
+
+.btn.whatsapp:active {
+  color: #fff;
+}
+
+.btn.call {
+  background: transparent;
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.btn.call:hover {
+  background: var(--gold);
+  color: var(--charcoal);
+  box-shadow: 0 15px 45px rgba(184,134,11,0.5);
+}
+
+.btn.call:active {
+  color: #fff;
+}
+
+.btn.map {
+  background: transparent;
+  border-color: var(--text-muted);
+  color: var(--text-muted);
+}
+
+.btn.map:hover {
+  background: var(--text-muted);
+  color: var(--charcoal);
+  border-color: var(--text-muted);
+}
+
+.btn.map:active {
+  color: #fff;
+  text-shadow: 0 0 20px #fff;
+}
+
+@media(max-width: 768px){
+  .buttons {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 45px;
+  margin-top: 60px;
+}
+
+.trust-item {
+  text-align: center;
+  padding: 35px 25px;
+  border: 1px solid var(--border);
+  background: rgba(22,22,29,0.4);
+  backdrop-filter: blur(20px);
+  transition: 0.3s;
+}
+
+.trust-item:hover {
+  border-color: var(--gold);
+  transform: translateY(-5px);
+}
+
+.trust-icon {
+  font-size: 48px;
+  color: var(--gold);
+  margin-bottom: 22px;
+  display: block;
+}
+
+.trust-item h4 {
+  font-size: 19px;
+  color: var(--platinum);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.trust-item p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.map-container { margin-top: 70px; text-align: center; }
+iframe {
+  width: 90%;
+  max-width: 1200px;
+  height: 500px;
+  border: 1px solid var(--border);
+  filter: grayscale(0.1) contrast(1.15) brightness(0.9);
+}
+
+footer {
+  padding: 80px 20px 50px;
+  background: var(--charcoal-2);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+footer h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 38px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+footer p {
+  color: var(--text-muted);
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.footer-contact {
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+.footer-contact a {
+  color: var(--gold-bright);
+  text-decoration: none;
+  margin: 0 20px;
+  transition: 0.3s;
+}
+
+.footer-contact a:hover {
+  color: var(--gold-light);
+}
+
+.footer-contact a:active {
+  color: #fff;
+  text-shadow: 0 0 15px var(--gold-bright);
+}
+
+.footer-gst {
+  margin-top: 35px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s ease forwards;
+}
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+<div class="texture-overlay"></div>
+
+<div class="left-brand" id="leftBrand">
+  <span>CK PAPERS</span>
+</div>
+
+<header class="fade-up">
+  <div class="logo-wrap">
+    <img class="logo" src="logo.jpeg" alt="CK Papers Logo">
+  </div>
+  <h1>CK PAPERS</h1>
+  <p>WHOLESALE PAPER MARKETING</p>
+  <div class="gold-line"></div>
+  <div class="contact-header">
+    <a href="tel:+918074716688"><i class="fas fa-phone"></i> 8074716688</a> | 
+    <a href="tel:+919959453452"><i class="fas fa-phone"></i> 9959453452</a>
+  </div>
+</header>
+
+<div class="hero fade-up" style="animation-delay: 0.2s;">
+  <h2>Paper for a Net Zero Future</h2>
+  <p>Supplying premium quality A4 paper to businesses across NTR District with wholesale pricing, GST billing, and reliable delivery</p>
+</div>
+
+<div class="section fade-up" style="animation-delay: 0.4s;">
+  <h3>Our Product Range</h3>
+  <p class="section-subtitle">High-grade paper for printing, photocopy, and commercial documentation</p>
+  <div class="grid">
+    <div class="card">
+      <div class="card-visual">
+        <div class="bundle-stack"></div>
+      </div>
+      <h4>A4 Paper 70 GSM</h4>
+      <div class="price-wrap">
+        <div class="price-offer">₹200 - ₹210</div>
+        <div class="price-range">Per Bundle (500 sheets)</div>
+      </div>
+      <div class="specs">
+        Size: 210 x 297 mm (A4)<br>
+        Sheets: 500 per ream<br>
+        Weight: 70 GSM<br>
+        Ideal for: Office printing, documentation, bulk photocopy
+      </div>
+      <a class="order-btn" href="https://wa.me/918074716688?text=I%20want%20A4%2070GSM">Request Quote</a>
+    </div>
+    
+    <div class="card">
+      <div class="card-visual">
+        <div class="bundle-stack"></div>
+      </div>
+      <h4>A4 Paper 75 GSM</h4>
+      <div class="price-wrap">
+        <div class="price-offer">₹210 - ₹220</div>
+        <div class="price-range">Per Bundle (500 sheets)</div>
+      </div>
+      <div class="specs">
+        Size: 210 x 297 mm (A4)<br>
+        Sheets: 500 per ream<br>
+        Weight: 75 GSM<br>
+        Ideal for: Premium printing, presentations, official documents
+      </div>
+      <a class="order-btn" href="https://wa.me/918074716688?text=I%20want%20A4%2075GSM">Request Quote</a>
+    </div>
+  </div>
+
+  <div class="terms-card">
+    <h4><i class="fas fa-file-contract" style="color: var(--gold); margin-right: 10px;"></i>Terms & Conditions</h4>
+    <ul class="terms-list">
+      <li>Applicable GST Extra</li>
+      <li>Transportation Charges Extra/Negotiable</li>
+      <li>7 Days Credit Available</li>
+      <li>Bulk Order Discounts Available</li>
+      <li>Prices Valid for Limited Period</li>
+      <li>Payment: Cash / UPI / Bank Transfer</li>
+    </ul>
+  </div>
+</div>
+
+<div class="carousel-section">
+  <h3 class="carousel-title">Trusted By Leading Institutions</h3>
+  <div class="carousel">
+    <div class="carousel-item">SCHOOLS</div>
+    <div class="carousel-item">COLLEGES</div>
+    <div class="carousel-item">OFFICES</div>
+    <div class="carousel-item">PRINT SHOPS</div>
+    <div class="carousel-item">HOSPITALS</div>
+    <div class="carousel-item">BANKS</div>
+    <div class="carousel-item">GOVT OFFICES</div>
+    <div class="carousel-item">CORPORATES</div>
+    <div class="carousel-item">SCHOOLS</div>
+    <div class="carousel-item">COLLEGES</div>
+    <div class="carousel-item">OFFICES</div>
+    <div class="carousel-item">PRINT SHOPS</div>
+  </div>
+</div>
+
+<div class="catalog-section">
+  <h3 style="font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 20px; color: var(--platinum);">Download Our Catalog</h3>
+  <p style="color: var(--text-muted); margin-bottom: 40px;">Complete price list & product specifications</p>
+  <a href="image2.jpeg" download class="catalog-btn">
+    <i class="fas fa-download"></i> Download Price Catalog
+  </a>
+</div>
+
+<div class="cta-section fade-up" style="animation-delay: 0.6s;">
+  <h3 class="cta-title">Get In Touch With Us</h3>
+  <div class="buttons">
+    <a class="btn whatsapp" href="https://wa.me/918074716688" target="_blank">
+      <i class="fab fa-whatsapp" style="font-size: 22px;"></i> WhatsApp Order
+    </a>
+    <a class="btn call" href="tel:+918074716688">
+      <i class="fas fa-phone" style="font-size: 19px;"></i> 80747 16688
+    </a>
+    <a class="btn call" href="tel:+919959453452">
+      <i class="fas fa-phone" style="font-size: 19px;"></i> 99594 53452
+    </a>
+    <a class="btn map" href="https://maps.google.com/?q=Swamy+Towers+Vedadri+Road+Chilakalu+Jaggayyapet" target="_blank">
+      <i class="fas fa-map-marker-alt" style="font-size: 19px;"></i> Location
+    </a>
+  </div>
+
+  <div class="map-container">
+    <iframe src="https://maps.google.com/maps?q=Swamy%20Towers%20Vedadri%20Road%20Chilakalu%20Jaggayyapet&output=embed"></iframe>
+  </div>
+</div>
+
+<div class="section fade-up" style="animation-delay: 0.8s;">
+  <h3>Why Leading Businesses Choose CK Papers</h3>
+  <p class="section-subtitle">Committed to quality, reliability, and service excellence since inception</p>
+  <div class="trust-grid">
+    <div class="trust-item">
+      <i class="trust-icon fas fa-award"></i>
+      <h4>Certified Quality</h4>
+      <p>Sourced from ISO-certified mills ensuring consistent 70/75 GSM, brightness, and smooth finish</p>
+    </div>
+    <div class="trust-item">
+      <i class="trust-icon fas fa-boxes"></i>
+      <h4>Bulk Order Expertise</h4>
+      <p>Specialized in wholesale supply with volume discounts for schools, offices, and print shops</p>
+    </div>
+    <div class="trust-item">
+      <i class="trust-icon fas fa-truck-fast"></i>
+      <h4>Timely Delivery</h4>
+      <p>Same-day dispatch across NTR District. Delivery charges negotiable for bulk orders</p>
+    </div>
+    <div class="trust-item">
+      <i class="trust-icon fas fa-file-invoice-dollar"></i>
+      <h4>GST Compliant Billing</h4>
+      <p>Proper GST invoicing for all B2B transactions with 7 days credit facility available</p>
+    </div>
+  </div>
+</div>
+
+<footer class="fade-up" style="animation-delay: 1s;">
+  <h3>CK PAPERS</h3>
+  <div class="gold-line" style="margin: 30px auto;"></div>
+  <p style="font-weight: 600; color: var(--platinum); font-size: 17px;">Koppula Prudhvi</p>
+  <p>Dr No: 4-214, Swamy Towers, Vedadri Road,<br>Chilakalu, Jaggayyapet, NTR Dt - 521178</p>
+  <div class="footer-contact">
+    <a href="tel:+918074716688"><i class="fas fa-phone"></i> 8074716688</a>
+    <a href="tel:+919959453452"><i class="fas fa-phone"></i> 9959453452</a>
+    <a href="mailto:ckpapers2305@gmail.com"><i class="fas fa-envelope"></i> ckpapers2305@gmail.com</a>
+  </div>
+  <div class="footer-gst">
+    GST No: [To be updated] | Wholesale & Retail Paper Supplier | Serving NTR District<br>
+    © 2026 CK PAPERS. All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  const leftBrand = document.getElementById('leftBrand');
+  if (window.scrollY > 400) {
+    leftBrand.classList.add('visible');
+  } else {
+    leftBrand.classList.remove('visible');
+  }
+});
+</script>
+
+</body>
+</html>
